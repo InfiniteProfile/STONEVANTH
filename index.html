@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>STONEVANTH — The Universe of Stone</title>
+<meta name="description" content="An infinite universe of stone worlds, civilizations and identities.">
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<header id="top">
+ <a class="brand" href="#/">STONEVANTH</a>
+ <nav><a href="#/">Feed</a><a href="#/universe">Universe</a></nav>
+ <form id="sf" autocomplete="off">
+  <select id="st" aria-label="Search type">
+   <option value="galaxy">Galaxy</option><option value="system">Stone System</option><option value="planet">Planet</option>
+   <option value="civ">Civilization</option><option value="city">City</option><option value="pid" selected>Profile ID</option><option value="pname">Profile name</option></select>
+  <input id="sq" type="text" inputmode="text" placeholder="Search…" aria-label="Search" spellcheck="false">
+  <button type="submit">Search</button>
+ </form>
+ <div id="res" hidden></div>
+</header>
+<main>
+ <section id="home">
+  <div class="hero">
+   <svg viewBox="0 0 800 160" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><g fill="#15181b"><path d="M0 160V100l60-60 40 50 70-80 60 90 50-40 80 70 90-100 70 80 60-30 70 60 60-70 90 90V160z"/></g><g fill="#2a4a5c" opacity=".55"><path d="M120 160l40-110 40 110zM520 160l50-130 50 130zM330 160l30-70 30 70z"/></g></svg>
+   <div class="planet p1"></div><div class="planet p2"></div>
+   <h1>The Universe of Stone</h1>
+   <p>One universe. Infinite stone worlds. Limitless identities.</p>
+  </div>
+  <div id="feed"></div>
+ </section>
+ <section id="detail" hidden></section>
+</main>
+<script src="script.js"></script>
+</body></html>
